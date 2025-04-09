@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPECIA Quiz</title>
+    <link href="./default.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid d-flex justify-content-center">
+        <h3 class="my-0 text-center">SPECIA Quiz</h3>
+      </div>
+    </header>
+    <div class="container-fluid pt-3" id="quiz">
+      <div id="questions"></div>
+      <button id="submit" class="btn btn-primary mb-3 w-100">Submit Answers</button>
+    </div>
+    <div class="container-fluid pt-3" id="results" style="display:none;">
+      <div class="card">
+        <div class="card-header">Quiz Results</div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-6">
+              <h4>Strength: <span id="strength-score"></span>/20</h4>
+              <div class="progress">
+                <div class="progress-bar" id="strength-progress" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <h4>Perception: <span id="perception-score"></span>/20</h4>
+              <div class="progress">
+                <div class="progress-bar" id="perception-progress" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-md-6">
+              <h4>Endurance: <span id="endurance-score"></span>/20</h4>
+              <div class="progress">
+                <div class="progress-bar" id="endurance-progress" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <h4>Charisma: <span id="charisma-score"></span>/20</h4>
+              <div class="progress">
+                <div class="progress-bar" id="charisma-progress" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-md-6">
+              <h4>Intelligence: <span id="intelligence-score"></span>/20</h4>
+              <div class="progress">
+                <div class="progress-bar" id="intelligence-progress" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <h4>Agility: <span id="agility-score"></span>/20</h4>
+              <div class="progress">
+                <div class="progress-bar" id="agility-progress" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
